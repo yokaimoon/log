@@ -1,0 +1,19 @@
+<html>
+
+<head>
+<title> Cetra Project V.0.1 </title>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<?php header("Content-Type: text/html; charset=utf-8");?>
+</head>
+
+<body>
+
+<div id = "user_bar">
+<?php
+require "user_bar.php";
+?>
+</div>
+</body>
+
+</html>
