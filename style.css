@@ -1,1 +1,61 @@
-#map-page, #map-canvas { width: 100%; height: 100%; padding: 0; }
+#starfield01
+{
+    width: 770px;
+    height: 385px;
+}
+
+
+
+#sun
+{
+    width: 10%;
+    margin: 0 auto;
+}
+
+#sun img
+{
+    width: 50%;
+    height: auto;
+}
+
+#mercury
+{
+    width: 10%;
+    margin: 0 auto;
+    position: inherit;
+    transform: rotate(45deg) translateX(150px) rotate(-45deg);
+    animation: orbit2 12s linear infinite;
+}
+
+#mercury img
+{
+    width: 10%;
+    height: auto;
+}
+
+@keyframes orbit2 {
+	from { 	transform: rotate(0deg) translateX(150px) rotate(0deg); }
+	to   {  transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}   
+
+#venus
+{
+    width: 20%;
+    margin: 0 auto;
+    left: 50%
+    transform: rotate(45deg) translate(200px) rotate(-45deg);
+    animation: orbit3 20s linear infinite;
+    
+}
+
+#venus img
+{
+    width: 15%;
+    height: auto;
+}
+
+@keyframes orbit3
+{
+    from{transform: rotate(0deg) translateX(200px) rotate(0deg);}
+    to {transform: rotate(360deg) translateX(200px) rotate(-360deg);}
+}
