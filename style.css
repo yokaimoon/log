@@ -24,7 +24,12 @@
     margin: 0 auto;
     position: inherit;
     transform: rotate(45deg) translateX(150px) rotate(-45deg);
+    -ms-transform: rotate(45deg) translateX(150px) rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg) translateX(150px) rotate(-45deg);/* Safari and Chrome */
+    -o-transform: rotate(45deg) translateX(150px) rotate(-45deg); /* Opera */
+    -moz-transform: rotate(45deg) translateX(150px) rotate(-45deg);/* Firefox */
     animation: orbit2 12s linear infinite;
+    
 }
 
 #mercury img
@@ -36,7 +41,27 @@
 @keyframes orbit2 {
 	from { 	transform: rotate(0deg) translateX(150px) rotate(0deg); }
 	to   {  transform: rotate(360deg) translateX(150px) rotate(-360deg); }
-}   
+}
+
+@-webkit-keyframes orbit2{
+    from { -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@-moz-keyframes orbit2{
+    from { -moz-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@-o-keyframes orbit2 {
+    from { -o-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@keyframes orbit2 {
+    from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
 
 #venus
 {
